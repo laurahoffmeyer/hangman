@@ -1,0 +1,134 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size:14px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #eee;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 55px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.info {
+  margin-top: 0px;
+}
+canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#alphabet {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+  margin-top: 0px;
+}
+#alphabet li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35px;
+  height: 30px;
+  margin: 3px;
+  color: #18bc9c;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: solid 1px #18bc9c;
+}
+#alphabet li:hover {
+  background: #18bc9c;
+  border: solid 1px #18bc9c;
+  color: #fff;
+}
+#disable {
+  display: none;
+}
+#my-word {
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+#my-word li {
+  font-size: 33px;
+  padding: 0px 6px;
+  text-transform: uppercase;
+}
+.clicked {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.clicked:hover {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+#mylives {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #18bc9c;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  border: solid 1px #18bc9c;
+  color: #18bc9c;
+}

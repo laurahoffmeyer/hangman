@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta property="og:title" content="My JavaScript Hangman Game">
+    <meta property="og:image" content="./og_hangman.jpg">
+    <meta property="og:url" content="http://laurahoffmeyer.com/projects/hangman/">
+</head>
+<body>
+    <header class="section">
+        <h1>Hangman</h1>
+        <p class="info">Select a letter below to guess the word, or click hint to get a clue.</p>
+        <p id="mylives"></p>
+    </header>
+
+    <main class="section">
+        <canvas width="300px" height="250px" id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+        <div id="wordContainer"></div>
+        <h5 id="hint"></h5>
+        <div id="letterContainer"></div>
+        <p id="categoryName"></p>
+    </main>  
+    <footer>
+        <div class="buttons">
+            <button id="hintBtn">Hint</button>
+            <button id="reset">Reset</button>
+        </div>
+    </footer>
+    <script src="./script.js"></script>   
+</body>
+</html>
